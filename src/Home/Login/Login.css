@@ -1,0 +1,54 @@
+.login{
+
+    width: 100%;
+    height: 82.1vh;
+    background-color: #D6FADB;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-image: url("https://media.istockphoto.com/id/1403878916/vector/realistic-3d-green-question-mark-ask-questions-online-support-center-faq-concept.jpg?s=612x612&w=0&k=20&c=fyROmyOct4i2yCyCvVCPdM9PTaBoG8SeL-j1B0JW4Wo=");
+}
+
+.login > .background{
+
+    width: 100%;
+    height: 100%;
+    background-color: #d6fadbd2;
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.background > h1{
+
+    font-size: 48px;
+}
+
+.background > .loginAdd{
+
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #2A971B;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.loginAdd > input{
+
+    outline: 0;
+    border: 2px solid lightgray;
+    border-radius: 9999px;
+    padding: 15px 10px;
+    background-color: #D6FADB;
+    font-size: 18px;
+}
+
+.loginAdd > input::placeholder{
+
+    text-transform: capitalize;
+    color: #000;
+    font-size: 18px;
+}

@@ -1,0 +1,157 @@
+*{
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.addContainer{
+
+    width: 100%;
+    padding: 100px 150px;
+    background-color: #D6FADB;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.addContainer > form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+form > .quizName{
+
+    display: flex;
+    align-items: center;
+    border: 2px solid #2A971B;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.quizName > .oneIcon{
+
+    font-size: 36px;
+    color: #2A971B;
+}
+
+.quizName > input[name="name"]{
+
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border-bottom: 2px solid #2A971B;
+    width: 300px;
+}
+
+form > .quizQuestion{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #2A971B;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.quizQuestion > .questionTittle{
+
+    display: flex;
+    align-items: center;
+}
+
+.questionTittle > .twoIcon{
+    
+    font-size: 36px;
+    color: #2A971B;   
+}
+
+
+.question > .question__item{
+
+    display: flex;
+    padding: 20px;
+    border: 1px solid #2A971B;
+    border-radius: 15px;
+    gap: 20px;
+    align-items: center;
+}
+
+.question > .question__choosies{
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #2A971B;
+    border-radius: 15px;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.question__choosies > .answer{
+
+    display: flex;
+    align-items: center;
+}
+
+.answer > input{
+
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+.question__item > input{
+
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+}
+
+.btn{
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 35%;
+}
+
+.btn > input[type="submit"]{
+
+    width: 200px;
+    padding: 0.7rem;
+    font-size: 32px;
+    background-color: #2A971B;
+    border: 0;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.btn > .backBtn{
+
+    width: 200px;
+    padding: 0.7rem;
+    font-size: 32px;
+    background-color: #2A971B;
+    border: 0;
+    color: #fff;
+    border-radius: 15px;
+}
+
+
+@media screen and (min-width: 430px) {
+    
+    .addContainer{
+
+        width: 100%;
+    }
+}

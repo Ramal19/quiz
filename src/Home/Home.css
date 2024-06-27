@@ -1,0 +1,32 @@
+*{
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    background-color: #D6FADB;
+}
+
+header{
+
+    padding: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > button{
+
+    width: 150px;
+    padding: 20px;
+    font-size: 16px;
+    border: 0;
+    background-color: #2A971B;
+    text-transform: capitalize;
+}
