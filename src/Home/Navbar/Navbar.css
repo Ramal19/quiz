@@ -18,6 +18,11 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
+.navbar > .navbarMenu{
+
+    display: none;
+}
+
 .navbar > h1{
 
     display: flex;
@@ -66,10 +71,96 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 430px) {
-    
+
+@media screen and (min-width : 1400px) {
+
     .navbar{
 
-        width: 100%;
+        max-width: 100%;
     }
-}
+
+    .container{
+      max-width: 100%;
+      
+    }
+  
+  }
+  
+  @media (min-width : 1200px) and (max-width : 1400px) {
+    .container{
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width : 992px) and  (max-width : 1200px){
+    .container{
+      max-width: 100%;
+    }
+  
+  }
+  
+  @media (min-width : 768px) and (max-width : 992px) {
+
+    .navbar > .link {
+
+        display: none;
+    }
+
+    .navbar > .navbarMenu{
+
+        display: flex;
+        font-size: 54px;
+        color: #2A971B;
+    }
+
+    .container{
+      max-width: 100%;
+    }
+  
+  }
+  
+  @media (min-width : 576px) and (max-width : 768px) {
+    .container{
+      max-width: 100%;
+    }
+
+    
+    .navbar > .link {
+
+        display: none;
+    }
+
+    .navbar > .navbarMenu{
+
+        display: flex;
+        font-size: 54px;
+        color: #2A971B;
+    }
+  }
+  
+  
+  @media (max-width : 576px){
+
+    .navbar{
+
+        display: flex;
+        gap: 50px;
+    }
+
+    .iconNavbar > .quiz__icon{
+
+        font-size: 14px;
+    }
+    
+    .navbar > .link {
+
+        display: none;
+    }
+
+    .navbar > .navbarMenu{
+
+        display: flex;
+        font-size: 54px;
+        color: #2A971B;
+    }
+  }

@@ -3,9 +3,8 @@ import './Game.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { VscDebugStart } from 'react-icons/vsc'
-import { MdEdit, MdMenu, MdOutlineQuiz } from 'react-icons/md'
+import { MdEdit, MdMenu, MdOutlineFavorite, MdOutlineQuiz } from 'react-icons/md'
 import { AiFillDelete } from 'react-icons/ai'
-import { CiCirclePlus } from 'react-icons/ci'
 import { FaPlus, FaSearch } from 'react-icons/fa'
 
 export const Game = () => {
@@ -34,6 +33,14 @@ export const Game = () => {
 
   const filterData = sortedData.filter((inf) => inf.name.toUpperCase().startsWith(inpValue.toUpperCase()))
 
+
+  
+  const addToFav = (id) => {
+
+    axios.get("http://localhost:8000/quizzes/" + id)
+        .then(res => axios.post("http://localhost:8000/favorites/", res.data))
+}
+
   return (
     <div className='container'>
 
@@ -61,17 +68,23 @@ export const Game = () => {
                     <div className="dropdown-content">
                       <button onClick={() => deleteBtn(item.id)}>
                         <AiFillDelete style={{ fontSize: '24px', color: '#2A971B' }} />
-                        <span>Delete</span>
+                        <span style={{fontSize: '18px'}}>Delete</span>
+                      </button>
+                      <button onClick={() => addToFav(item.id)}>
+                      <MdOutlineFavorite style={{ fontSize: '24px', color: '#2A971B' }} />
+                      <span style={{fontSize: '18px'}}>
+                        Add Favorites
+                      </span>
                       </button>
                       <button>
                         <MdEdit style={{ fontSize: '24px', color: '#2A971B' }} />
-                        <span>Edit</span>
+                        <span style={{fontSize: '18px'}}>Edit</span>
                       </button>
                     </div>
                   </div>
                 </div>
 
-                <h1>{item.name}</h1>
+                <h1 style={{textTransform: 'capitalize'}}>{item.name}</h1>
 
                 <div className="start">
                   <h3>Click to start</h3>

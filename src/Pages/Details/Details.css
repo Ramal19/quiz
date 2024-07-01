@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+
+.trueAnswer{
+    background-color: #2A971B !important;
+    color: #fff;
+}
+
+.falseAnswer{
+    background-color: red !important;
+    color: #fff;
+}
+
 .containerDetails{
 
     width: 100%;
@@ -26,6 +37,24 @@
     border-radius: 25px;
     border: 1px solid lightgray;
 }
+
+.containerDetails > .btnS{
+
+    width: 150px;
+    padding: 20px;
+    font-size: 24px;
+    border: 0;
+    background-color: #2A971B;
+    text-transform: capitalize;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .questionHead > h1{
 
@@ -49,16 +78,24 @@ h1 > .numberIcon{
     gap: 10px;
 }
 
-.questionAnswers > h1{
+.questionAnswers > div{
 
     background-color: #fff;
     border: 1px solid lightgray;
     border-radius: 25px;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.questionAnswers > h1:hover{
+.questionAnswers > div:hover{
 
     background-color: #2A971B;
     color: #fff;
+}
+
+div > input[type="radio"]{
+
+width: 50px;
 }
